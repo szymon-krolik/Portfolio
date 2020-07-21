@@ -1,0 +1,165 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CV - Szymon</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="#">Szymon</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'projects' %}">Projekty</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'cv' %}">CV</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'hire-me' %}">Zatrudnij mnie</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page cv-page">
+        <section class="portfolio-block block-intro border-bottom">
+            <div class="container">
+                <div class="avatar" style="background-image:url(&quot;/static/img/avatars/prof.jpg?&quot;);"></div>
+                <div class="about-me">
+                    <p>Cześć! Nazywam się Szymon Królik. Zajmuję się tworzeniem stron, aplikacji. Lecz to nie wszystko. Napisz do mnie a się przekonasz!<br>&nbsp;Moje motto brzmi "eat, sleep, code, repeat"<br><br></p><a class="btn btn-outline-primary" role="button"
+                        href="{% url 'hire-me' %}">Zatrudnij mnie!</a></div>
+            </div>
+        </section>
+        <section class="portfolio-block cv">
+            <div class="container">
+                <div class="work-experience group">
+                    <div class="heading">
+                        <h2 class="text-center"><strong>Doświadczenie</strong><br></h2>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Web Developer</h3>
+                                <h4 class="organization">Drukarnia</h4>
+                            </div>
+                            <div class="col-md-6"><span class="period"><strong>10/2018 - 12/2018</strong></span></div>
+                        </div>
+                        <p class="text-muted">Zajmowałem się prowadzeniem sklepu internetowego drukarni oraz naprawianiem wszelkich błedów występujących na witrynie</p>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3><strong>Web developer</strong></h3>
+                                <h4 class="organization">School</h4>
+                            </div>
+                            <div class="col-md-6"><span class="period"><strong>01/2019 - 04/2019</strong></span></div>
+                        </div>
+                        <p class="text-muted">Brałem udział w tworzeniu aplikacji do użytku publicznego w województwie Śląskim </p>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Web Developer</h3>
+                                <h4 class="organization">self-employment</h4>
+                            </div>
+                            <div class="col-md-6"><span class="period">05/2019 - Present</span></div>
+                        </div>
+                        <p class="text-muted">Tworzę serwisy internetowe na zlecenia klientów.</p>
+                    </div>
+                </div>
+
+                <div class="education group">
+                    <div class="heading">
+                        <h2 class="text-center"><strong>Edukacja</strong></h2>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3><strong>Szkoła średnia</strong></h3>
+                                <h4 class="organization">Zespół Szkół Technicznych Nr 3</h4>
+                            </div>
+                            <div class="col-6"><span class="period"><strong>09/2015 - 04/2019</strong></span></div>
+                        </div>
+                        <p class="text-muted">Brałem udział w wielu konkursach, olimpiadach o tematyce informatycznej, począwszy od cyberbezpieczeństwa, kończąc na programowaniu</p>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3><strong>Uczelnia</strong></h3>
+                                <h4 class="organization">Uniwersytet Śląski</h4>
+                            </div>
+                            <div class="col-md-6"><span class="period"><strong>10/2020 - Obecnie</strong></span></div>
+                        </div>
+                        <p class="text-muted">Dzięki studiowaniu poszerzam swoją wiedzę na temat szeroko pojętej informatyki oraz rozwijam się w swojej pasji.</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="skills portfolio-info-card">
+                                <h2>Skills</h2>
+                                <h3>HTML</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="sr-only">100%</span></div>
+                                </div>
+                                <h3>PHP</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"><span class="sr-only">90%</span></div>
+                                </div>
+                                <h3>Python</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only">80%</span></div>
+                                </div>
+                                <h3>JavaScript</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only">80%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-info portfolio-info-card">
+                                <h2>Contact Info</h2>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-person icon"></i></div>
+                                    <div class="col-9"><span>Szymon Królik</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-ios-telephone icon"></i></div>
+                                    <div class="col-9"><span>+48 514 702 363</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-at icon"></i></div>
+                                    <div class="col-9"><span>krolik.sz@wp.pl</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hobbies group">
+                    <div class="heading">
+                        <h2 class="text-center"><strong>Zainteresowania</strong></h2>
+                    </div>
+                    <p class="text-center text-muted">Interesuję się tworzeniem serwisów internetowych, tworzeniem aplikacji desktopowych oraz mobilnych, oprócz rzeczy, którymi się zajmuję, interesuje mnie także lotnictwo cywilne, rozgrywki sportowe oraz dla relaksu prowadzę zaciekłe
+                        rywalizacje online</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+       <div class="container">
+            <div class="links"><a href="{% url 'cv' %}">O mnie</a><a href="{% url 'hire-me' %}">Zatrudnij mnie</a><a href="{% url 'projects' %}">Projekty</a></div>
+            <div class="social-icons"><a href="https://www.facebook.com/szymon.krolik.58"><i class="icon ion-social-facebook"></i></a><a href="https://www.instagram.com/szymon.krolik/"><i class="icon ion-social-instagram-outline"></i></a></div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="{% static 'bootstrap/js/script.min.js'%}"></script>
+</body>
+
+</html>

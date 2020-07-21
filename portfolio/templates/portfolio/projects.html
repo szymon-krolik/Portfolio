@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Projekty - Szymon</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="{% url 'home' %}">Szymon</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'projects' %}">Projekty</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'cv' %}">CV</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'hire-me' %}">Zatrudnij mnie</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page projects-page">
+        <section class="portfolio-block projects-cards">
+            <div class="container">
+                <!-- Start: portfolio heading -->
+                <div class="heading">
+                    <h2>Ostatnie prace</h2>
+                </div>
+                <!-- End: portfolio heading -->
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="{% static 'img/tech/1.png' %}" alt="Card Image"></a>
+                            <div class="card-body">
+                                <h6><a href="#">Wypożyczalnia samochodów</a></h6>
+                                <p class="text-muted card-text">Projekt oparty na technologii Bootstrap.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="{% static 'img/tech/2.png' %}" alt="Card Image"></a>
+                            <div class="card-body">
+                                <h6><a href="#">Sklep internetowy</a></h6>
+                                <p class="text-muted card-text">Projekt oparty na bootstrap oraz na framwork Laravel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="{% static 'img/tech/3.png' %}" alt="Card Image"></a>
+                            <div class="card-body">
+                                <h6><a href="#">Blog</a></h6>
+                                <p class="text-muted card-text">Projekt oparty na technologii bootstrap oraz na framework Django</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+       <div class="container">
+            <div class="links"><a href="{% url 'cv' %}">O mnie</a><a href="{% url 'hire-me' %}">Zatrudnij mnie</a><a href="{% url 'projects' %}">Projekty</a></div>
+            <div class="social-icons"><a href="https://www.facebook.com/szymon.krolik.58"><i class="icon ion-social-facebook"></i></a><a href="https://www.instagram.com/szymon.krolik/"><i class="icon ion-social-instagram-outline"></i></a></div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="{% static 'bootstrap/js/script.min.js'%}"></script>
+</body>
+
+</html>
